@@ -30,7 +30,7 @@ public class ProducerDemoKeys {
         for (int i=0; i<10; i++) {
 
             String topic = "first_topic";
-            String value = "hello world";
+            String value = "hello world" + Integer.toString(i);
             String key   = "id_" + Integer.toString(i); // add a key with every topic
 
             // Create Producer Record
